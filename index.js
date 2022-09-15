@@ -26,14 +26,14 @@ console.log(color(figlet.textSync('Miku Bot MD', {
 		whitespaceBreak: true
         }), 'yellow'))
 
-console.log(color('\nHello, I am Fantox, the main developer of this bot.\n\nThanks for using: Miku Bot','aqua'))
-console.log(color('\nYou can follow me on GitHub: FantoX001','aqua'))
+console.log(color('\nHello, I am Devime, the main developer of this bot.\n\nThanks for using: Miku Bot','aqua'))
+console.log(color('\nYou can follow me on GitHub: shibam00007','aqua'))
 
     let { version, isLatest } = await fetchLatestBaileysVersion()
     const Miku = MikuConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['Miku by: Fantox','Safari','1.0.0'],
+        browser: ['Devime by: shibam','Safari','1.0.0'],
         auth: state,
         version
     })
@@ -168,7 +168,7 @@ Miku.sendMessage(anu.id, buttonMessage)
                 } else if (anu.action == 'remove') {
                 	let WAuserName = num
                     mikutext = `
-Sayonara 👋, @${WAuserName.split("@")[0]},
+Bye bye fir mulakat hogi👋, @${WAuserName.split("@")[0]},
 
 I hope you will come back soon, but we are not going to miss you though!
 `
