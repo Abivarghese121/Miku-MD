@@ -3407,7 +3407,7 @@ case 'music': case 'play': case 'song': case 'ytplay': {
  if (!args[0]) return reply(mess.nolink)
  try {
  hx.youtube(args[0]).then(async(res) => {
- textyt = `「  _Miku Youtube Downloader_  」
+ textyt = `「  _Devime Youtube Downloader_  」
 *Title :* ${res.title}
 *Size :* ${res.size}
 *Quality :* ${res.quality}
@@ -3698,7 +3698,8 @@ case 'beautifulcheck':
 					const tik = can[Math.floor(Math.random() * can.length)]
 Miku.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${tik}%*` }, { quoted: m })
 					break
-
+case 'ganducheck':
+case 'chutiyacheck':
 case 'awesomecheck':
   case 'greatcheck':
     case 'gaycheck':
@@ -3779,7 +3780,7 @@ case 'charactercheck':
          "make a short dance video without any filter just with a music and put it on ur status for 5hrs",
          "call ur bestie, bitch",
          "put your photo without filter on ur status for 10mins",
-         "say i love oli london in voice note🤣🤣",
+         "say i love churel in voice note🤣🤣",
          "Send a message to your ex and say I still like you",
          "call Crush/girlfriend/bestie now and screenshot here",
          "pop to one of the group member personal chat and Say you ugly bustard",
@@ -3824,7 +3825,8 @@ case 'truth':
                            const truth =[
                  "Have you ever liked anyone? How long?",
                  "If you can or if you want, which gc/outside gc would you make friends with? (maybe different/same type)",
-                 "apa ketakutan terbesar kamu?",
+                 "ap ki pocket money kitni hai?",
+                 "Kiske sath Sadi karni hai?"
                  "Have you ever liked someone and felt that person likes you too?",
                  "What is the name of your friend's ex-girlfriend that you used to secretly like?",
                  "Have you ever stolen money from your father or mom? The reason?",
@@ -3910,7 +3912,7 @@ case 'truth':
                  "What is the biggest lie you ever told your parents",
                  "Who is your celebrity crush",
                  "Whats the strangest dream you have ever had",
-                 "do you play pubg, if you then send ur id number"
+                 "do you play freefire, if you then send ur id number"
              ]
                            const mikutruthww = truth[Math.floor(Math.random() * truth.length)]
                            buffer = await getBuffer(`https://wallpapercave.com/wp/wp10524609.jpg`)
@@ -4810,7 +4812,7 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
       
- const helpmenu = `Konichiwa *${pushname}* Senpai,
+ const helpmenu = `Namoskar *${pushname}* Dada,
 
 I am *Devime*, a bot developed by *shibam*.
 
@@ -4920,7 +4922,7 @@ case '':
       mikupic ='https://wallpapercave.com/wp/wp10524580.jpg'
     
         
- const needhelpmenu = `Do you need help ${pushname} Senpai? Type *${prefix}help* to get my full command list.`
+ const needhelpmenu = `kuchh help chahiye ${pushname} Dada? Type *${prefix}help* to get my full command list.`
      
          let butRun = [
                 {buttonId: `-help`, buttonText: {displayText: 'Help'}, type: 1}
@@ -4938,11 +4940,11 @@ break
 
 
 
-case 'miku':
+case  'devime':
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
 
-const txt = `Do you love Devime? Then we are the same.`
+const txt = `Do you love Shibam? Then we are the same.`
 const mikuarray= [
             "https://c.tenor.com/SOeIW-QVZvoAAAPo/scared-the-quintessential-quintuplets.mp4",
             "https://c.tenor.com/FDe7lTs0xvMAAAPo/miku-nakano-nakano-miku.mp4",
