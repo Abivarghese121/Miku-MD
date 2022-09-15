@@ -3583,7 +3583,7 @@ break
 
 
 
-case 'smeme': case 'stickermeme': case 'stickmeme': {
+case 'smeme': case 'stickermeme': case 'stickmeme': case 'sm': {
     if (isBan) return reply(mess.banned)
     if (isBanChat) return reply(mess.bangc)
 let { TelegraPh } = require('./lib/uploader')
@@ -3682,7 +3682,7 @@ await Miku.sendButtonText(m.chat, buttons, jawab, Miku.user.name, m, {mentions: 
 }
 break
 
-case 'handsomecheck':
+case 'handsomecheck': case 'hscheck':
     if (isBan) return reply(mess.banned)
     if (isBanChat) return reply(mess.bangc)
 				if (!text) return replay(`Tag Someone, Example : ${prefix + command} @Fantox`)
@@ -3699,6 +3699,7 @@ case 'beautifulcheck':
 Miku.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${tik}%*` }, { quoted: m })
 					break
 case 'ganducheck':
+case 'maturecheck':
 case 'chutiyacheck':
 case 'awesomecheck':
   case 'greatcheck':
@@ -3736,9 +3737,9 @@ case 'charactercheck':
          "call crush/pickle now and send ss",
          "drop only emote every time you type on gc/pc for 1 day.",
          "say Welcome to Who Wants To Be a Millionaire! to all the groups you have",
-         "call ex saying miss",
+         "call your crush/bf/gf and say I wanna marry with u right now😂",
          "sing the chorus of the last song you played",
-         "vn your ex/crush/girlfriend, says hi (name), wants to call, just a moment. I miss🥺👉🏼👈🏼",
+         "Send a message to your bf/crush/girlfriend, says hi (name), wants to call, just a moment. I miss🥺👉🏼👈🏼u",
          "Bang on the table (which is at home) until you get scolded for being noisy",
          "Tell random people - I was just told I was your twin first, we separated, then I had plastic surgery. And this is the most ciyusss_ thing",
          "mention ex's name",
@@ -3756,14 +3757,14 @@ case 'charactercheck':
          "record ur voice that read *titar ke age do titar, titar ke piche do titar*",
          "prank chat ex and say *i love u, please come back.* without saying dare!",
          "chat to contact wa in the order according to your battery %, then tell him *i am lucky to hv you!*",
-         "change the name to *I am a child of randi* for 5 hours",
-         "type in bengali 24 hours",
-         "Use selmon bhoi photo for 3 days",
+         "change the name to *I am a child of god* for 5 hours",
+         "type in bengali for 24 hours",
+         "Use salman khan photo for 3 days",
          "drop a song quote then tag a suitable member for that quote",
          "send voice note saying can i call u baby?",
          "ss recent call whatsapp",
          "Say *YOU ARE SO BEAUTIFUL DON'T LIE* to guys!",
-         "pop to a group member, and say fuck you",
+         "pop to a group member, and say I love you",
          "Act like a chicken in front of ur parents",
          "Pick up a random book and read one page out loud in vn n send it here",
          "Open your front door and howl like a wolf for 10 seconds",
@@ -3778,7 +3779,7 @@ case 'charactercheck':
          "Show the last five people you texted and what the messages said",
          "put your full name on status for 5hrs",
          "make a short dance video without any filter just with a music and put it on ur status for 5hrs",
-         "call ur bestie, bitch",
+         "call ur bestie, say kutti/kutte kaha mar gyi ho",
          "put your photo without filter on ur status for 10mins",
          "say i love churel in voice note🤣🤣",
          "Send a message to your ex and say I still like you",
@@ -3789,25 +3790,25 @@ case 'charactercheck':
          "write i love you (random grup member name, who is online) in personal chat, (if u r boy write girl name/if girl write boy name) take a snap of the pic and send it here",
          "use any bollywood actor photo as ur pfp for 3 days",
          "put your crush photo on status with caption, this is my crush",
-         "change name to I AM GAY for 5 hours",
+         "change name to I AM dumb for 5 hours",
          "chat to any contact in whatsapp and say i will be ur bf/gf for 5hours",
          "send voice note says i hv crush on you, want to be my girlfriend/boyfriend or not? to any random person from the grup(if u girl choose boy, if boy choose girl",
-         "slap ur butt hardly send the sound of slap through voice note😂",
+         "slap on ur face hardly send the sound of slap through voice note😂",
          "state ur gf/bf type and send the photo here with caption, ugliest girl/boy in the world",
-         "shout bravooooooooo and send here through voice note",
+         "shout ureka! and send here through voice note",
          "snap your face then send it here",
-         "Send your photo with a caption, i am lesbian",
+         "Send your photo with a caption, i am dumb",
          "shout using harsh words and send it here through vn",
          "shout you bastard in front of your mom/papa",
          "change the name to i am idiot for 24 hours",
          "slap urself firmly and send the sound of slap through voice note😂",
-         "say i love the bot owner Fantox through voice note",
+         "say i love the bot owner of this bot through voice note",
          "send your gf/bf pic here",
          "make any tiktok dance challenge video and put it on status, u can delete it after 5hrs",
          "breakup with your best friend for 5hrs without telling him/her that its a dare",
           "tell one of your frnd that u love him/her and wanna marry him/her, without telling him/her that its a dare",
           "say i love depak kalal through voice note",
-          "write i am feeling horny and put it on status, u can delete it only after 5hrs",
+          "write i am feeling cold and put it on status, u can delete it only after 5hrs",
           "write i am lesbian and put it on status, u can delete only after 5hrs",
           "kiss your mommy or papa and say i love you😌",
           "put your father name on status for 5hrs",
@@ -3896,7 +3897,7 @@ case 'truth':
                  "what was your worst habit at school?",
                 "have you ever thought of taking revenge from ur teacher?",
                  "do you like current prime minister of ur country",
-                 "you non veg or veg",
+                 "you r non veg or veg?",
                  "if you could be invisible, what is the first thing you would do",
                  "what is a secret you kept from your parents",
                  "Who is your secret crush",
