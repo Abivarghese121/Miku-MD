@@ -3826,7 +3826,7 @@ case 'truth':
                  "Have you ever liked anyone? How long?",
                  "If you can or if you want, which gc/outside gc would you make friends with? (maybe different/same type)",
                  "ap ki pocket money kitni hai?",
-                 "Kiske sath Sadi karni hai?"
+                 "Kiske sath Sadi karni hai?",
                  "Have you ever liked someone and felt that person likes you too?",
                  "What is the name of your friend's ex-girlfriend that you used to secretly like?",
                  "Have you ever stolen money from your father or mom? The reason?",
