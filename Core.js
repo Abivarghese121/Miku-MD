@@ -5110,7 +5110,10 @@ case '':
             Miku.sendMessage(m.chat,buttonMessage,{quoted:m})
                 }
 break
-
+case 'dipu': case 'dipanwita': case 'dm': case 'dipusan':
+    if (isBan) return reply (mess.banned)
+    if (isBanChat) return reply (mess.bangc)
+const text = `I love you Shibam🖤.Please marry with me 👩‍❤️‍👨.`
 
 
 case  'devime':
@@ -5216,7 +5219,7 @@ default:
     if(isCmd){
         if (isBan) return reply(mess.banned)	 			
         if (isBanChat) return reply(mess.bangc)
-        reply (`No such command programmed *${pushname}* senpai! Type *${prefix}help* to get my full command list!`)
+        reply (`No such command programmed *${pushname}* Dada! Type *${prefix}help* to get my full command list!`)
 
     }	 			
 
