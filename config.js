@@ -27,8 +27,8 @@ global.location = "West Bengal, India"
 global.reactmoji = "❤️"
 global.themeemoji = "💖"
 global.vidmenu = { url: 'https://c.tenor.com/YGuLegQWubwAAAPo/miku-nakano-gotoubun-no-hanayome.mp4' }
-global.websitex = "https://github.com/FantoX001"
-global.lolhuman = "KaysaS"
+global.websitex = "https://github.com/shibam00007"
+global.lolhuman = "he he he~~~"
 
 
 global.BotLogo = fs.readFileSync("./Assets/pic1.jpg")
@@ -58,7 +58,7 @@ global.ntilink = []
 
 
 global.mess = {
-    jobdone: 'Job done...',
+    jobdone: 'kam khatam...',
     useradmin: 'Ye sirf *Group Admins* Ke liye Hai *Boka*!',
     botadmin: 'are ye wala command me Bina admin huye nhi use kar sakta pehle admin karo mujhe .',
     botowner: 'Only my *Owner* can use this command, Boka!',
@@ -66,11 +66,11 @@ global.mess = {
     privateonly: 'This command is only made for *Private Chat*, Boka!',
     botonly: 'Only the *Bot itself* can use this command!',
     waiting: 'Ruko Jara Sabar Karo...',
-    nolink: 'Please provide me *link*, Boka!',
+    nolink: 'Please provide me *Valid link*, Boka!',
     error: 'kuchh to garbar hai',
     banned: 'You are *Banned* fron using commands!',
     bangc: 'This Group is *Banned* from using Commands!',
-    nonsfw: 'itna tharki v na ho *gadhe*! Pehle group ka NSFW mode to on karle '
+    nonsfw: 'Ger yourself a girlfriend/boyfriend! itna tharki v na ho *gadhe*! Pehle group ka NSFW mode to on karle '
     
 }
 
