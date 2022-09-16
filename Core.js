@@ -5114,7 +5114,7 @@ break
 case 'dipu': case 'dipanwita': case 'dm': case 'dipusan':
     if (isBan) return reply (mess.banned)
     if (isBanChat) return reply (mess.bangc)
-reply (I love you Shibam🖤.Please marry with me 👩‍❤️‍👨.)
+reply (`I love you Shibam🖤.Please marry with me 👩‍❤️‍👨.`)
 break
 
 
