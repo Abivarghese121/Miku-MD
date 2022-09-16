@@ -14,7 +14,7 @@ global.BotName = "Devime"
 global.packname = "Devime bot"
 global.author = "By: Shibam"
 global.OwnerName = "Shibam"
-global.BotSourceCode = "https://github.com/FantoX001/Miku-MD"
+global.BotSourceCode = "https://github.com/shibam00007/Miku-MD"
 global.SupportGroupLink = "https://chat.whatsapp.com/JcBzjRIxM5UHfuJbt0KrWt"
 global.sessionName = "session"
 
