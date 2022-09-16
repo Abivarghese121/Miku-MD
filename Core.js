@@ -5038,8 +5038,8 @@ Here's the list of my Commands.
 ║ ${prefix}lovelycheck
 ║ ${prefix}uglycheck
 ║ ${prefix}charactercheck
-║ ${prefix}quotes
-║ ${prefix}darkjoke
+║ ${prefix}devime
+║ ${prefix}dm
 ║ ${prefix}stickermeme
 ║
 ╚════════════╝
@@ -5110,10 +5110,12 @@ case '':
             Miku.sendMessage(m.chat,buttonMessage,{quoted:m})
                 }
 break
+
 case 'dipu': case 'dipanwita': case 'dm': case 'dipusan':
     if (isBan) return reply (mess.banned)
     if (isBanChat) return reply (mess.bangc)
 const text = `I love you Shibam🖤.Please marry with me 👩‍❤️‍👨.`
+break
 
 
 case  'devime':
