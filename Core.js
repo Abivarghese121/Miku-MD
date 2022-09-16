@@ -4812,9 +4812,9 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
       
- const helpmenu = `Namoskar *${pushname}* Dada,
+ const helpmenu = `Namoskar *${pushname}* Dada,kaise ho?agar merese help chahiye to mere commands use karo
 
-I am *Devime*, a bot developed by *shibam*.
+I am *Devime*, a bot modified by *shibam*.
 
 🔰 My prefix is:  ${prefix}
 
@@ -4872,7 +4872,7 @@ stickermeme, quotes, darkjoke
 
  *━━━〈  🎐 Fun 🎐  〉━━━*
 
-reaction, truth, dare, couple, soulmate, handsomecheck, beautifulcheck, awesomecheck, greatcheck, gaycheck, cutecheck, lesbiancheck, hornycheck, prettycheck, lovelycheck, uglycheck, charactercheck
+reaction, truth, dare, couple, soulmate, handsomecheck, chutiyacheck, ganducheck, maturecheck, beautifulcheck, awesomecheck, greatcheck, gaycheck, cutecheck, lesbiancheck, hornycheck, prettycheck, lovelycheck, uglycheck, charactercheck
 
  *━━━〈  🪁 Essentials 🪁  〉━━━*
 
@@ -4888,7 +4888,7 @@ qr, say, translate, fliptext, toletter
 
 
  『  *${global.BotName}*  』
- Powered by: *Fantox*
+ Powered by: *Devime*
 
  🔰 To use any of these commands type 
  " *${prefix}<Command name>* ".
@@ -4944,7 +4944,7 @@ case  'devime':
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
 
-const txt = `Do you love Shibam? Then we are the same.`
+const txt = `Do you love Shibam? I also love him if u like him too then u r my rival😤.`
 const mikuarray= [
             "https://c.tenor.com/SOeIW-QVZvoAAAPo/scared-the-quintessential-quintuplets.mp4",
             "https://c.tenor.com/FDe7lTs0xvMAAAPo/miku-nakano-nakano-miku.mp4",
@@ -5020,7 +5020,7 @@ case 'add':{
         if (isBanChat) return reply(mess.bangc)
         if (!m.isGroup) return replay(mess.grouponly)
     reply(`Running repl....Please wait until repl.it responds...`)						
-    var replqr =  await getBuffer(`https://miku-qr--fantox001.repl.co/`)
+    var replqr =  await getBuffer(`https://miku-qr--fatox001.repl.co/`)
                                var qrbutton = [
             {buttonId: `-qr`, buttonText: {displayText: `Re-run Repl`}, type: 1}
             ]
