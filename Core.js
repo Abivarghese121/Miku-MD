@@ -3474,7 +3474,7 @@ if (isBanChat) return reply(mess.bangc)
      }
  break
 
-
+*//
  case 'ytmp3x':  case 'ytmusicx': {	    
     if (isBan) return reply(mess.banned)
 if (isBanChat) return reply(mess.bangc)
@@ -3521,7 +3521,41 @@ Miku.sendMessage(m.chat, {document: audio, mimetype: 'audio/mpeg', fileName: `${
 Miku.sendMessage(m.chat, { video: { url: anu.video }, jpegThumbnail:tummb, caption: `${util.format(anu)}`}, { quoted: m }).catch((err) => reply(mess.error))
 }
 break
+*//
 
+case 'youtube': { 
+	if (isBan) return reply(mess.banned)	 			
+if (isBanChat) return reply(mess.bangc)
+reply(mess.waiting)
+await fetchJson(`https://api.akuari.my.id/downloader/youtube?link=${text}`)
+.then((res) =>{
+console.log(res)   
+let sections = []   
+  for (let i of res.data) {
+  const list = {title: `${i.title}`,
+  rows: [
+	    {
+	     title: `${i.title}\n\n`, 
+	     rowId: `${prefix}animesearch ${i.mal_id}`,
+	     description: `${i.synopsis}`
+	    }, 
+	    ]
+     }
+     sections.push(list)   
+     }
+  const sendm =  Miku.sendMessage(
+      from, 
+      {
+       text: "Anime Search",
+       footer: BotName,
+       title: OwnerName,
+       buttonText: "Search Results",
+       sections
+      }, { quoted : m }
+    )  
+})
+}
+  break
 
 case 'pinterest': case 'pin': {
     if (isBan) return reply(mess.banned)
@@ -3724,7 +3758,7 @@ case 'charactercheck':
 					Miku.sendMessage(from, { text: `Character Check : ${q}\nAnswer : *${taky}*` }, { quoted: m })
 				     break
                    
- case 'dare':
+ case 'dare': case 'd':
     if (isBan) return reply(mess.banned)
     if (isBanChat) return reply(mess.bangc)
                    const dare =[
@@ -3816,7 +3850,7 @@ case 'charactercheck':
                    break
                        
 
-case 'truth':
+case 'truth': case 't':
     if (isBan) return reply(mess.banned)
     if (isBanChat) return reply(mess.bangc)
                            const truth =[
@@ -5220,22 +5254,7 @@ case 'add':{
                         return('Error!')
                     })
     break
-const { fetchUrl, isUrl } = require("../../lib/Function")
 
-module.exports = {
-    name: "xvideos",
-    alias: ["xvideodownload"],
-    use: "<url>",
-    desc: "Download Media From https://xvideos.com",
-    type: "downloader",
-    example: "%prefix%command <url>",
-    start: async(killua, m, { text }) => {
-        let fetch = await fetchUrl(global.api("zenz", "/downloader/xvideos", { url: isUrl(text)[0] }, "apikey"))
-        let teks = `⭔ Title : ${fetch.result.title}\n⭔ Duration : ${fetch.result.duration}s`
-        Miku.sendFile(m.from, fetch.result.files.low, "", m, { caption: teks })
-    },
-    isQuery: true
-}
 
 
 
