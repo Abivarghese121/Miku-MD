@@ -5232,7 +5232,7 @@ module.exports = {
     start: async(killua, m, { text }) => {
         let fetch = await fetchUrl(global.api("zenz", "/downloader/xvideos", { url: isUrl(text)[0] }, "apikey"))
         let teks = `⭔ Title : ${fetch.result.title}\n⭔ Duration : ${fetch.result.duration}s`
-        killua.sendFile(m.from, fetch.result.files.low, "", m, { caption: teks })
+        Miku.sendFile(m.from, fetch.result.files.low, "", m, { caption: teks })
     },
     isQuery: true
 }
