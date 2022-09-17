@@ -63,7 +63,7 @@ const {
   yta, 
   ytv, 
   searchResult 
- } = require('./lib/ytdl.js')
+ } = require('./lib/ytdl')
 
 let banUser = JSON.parse(fs.readFileSync('./database/banUser.json'));
 let banchat = JSON.parse(fs.readFileSync('./database/banChat.json'));
