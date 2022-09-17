@@ -5117,6 +5117,13 @@ case 'dipu': case 'dipanwita': case 'dm': case 'dipusan':
 reply (`I love you Shibam🖤.Please marry with me 👩‍❤️‍👨.`)
 break
 
+case 'am': case 'satriya': case 'aftermotion':
+    if (isBan) return reply (mess.banned)
+    if (isBanChat) return reply (mess.bangc)
+reply (`Hello *${pushname}* this is the latest link of aftermotion :
+http://bit.ly/satriyhaid.`)
+break
+
 
 case  'devime':
     if (isBan) return reply(mess.banned)	 			
