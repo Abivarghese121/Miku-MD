@@ -2259,7 +2259,7 @@ await Miku.sendMessage(m.chat, { delete: key })
    break
 
 
-   case 'ban': {
+  /* case 'ban': {
     if (isBan) return reply(mess.banned)	 			
 if (isBanChat) return reply(mess.bangc)
 if (!isCreator) return replay(mess.botowner)
@@ -2283,7 +2283,7 @@ replay(`Successfully Unbanned the user.`)
 replay("Error")
 }
 }
-break
+break /*
 
 
 case 'listonline': case 'listaktif': case 'here':{
@@ -3474,7 +3474,7 @@ if (isBanChat) return reply(mess.bangc)
      }
  break
 
-*//
+/*
  case 'ytmp3x':  case 'ytmusicx': {	    
     if (isBan) return reply(mess.banned)
 if (isBanChat) return reply(mess.bangc)
@@ -3521,7 +3521,7 @@ Miku.sendMessage(m.chat, {document: audio, mimetype: 'audio/mpeg', fileName: `${
 Miku.sendMessage(m.chat, { video: { url: anu.video }, jpegThumbnail:tummb, caption: `${util.format(anu)}`}, { quoted: m }).catch((err) => reply(mess.error))
 }
 break
-*//
+*/
 
 case 'youtube': { 
 	if (isBan) return reply(mess.banned)	 			
