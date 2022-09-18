@@ -5183,19 +5183,12 @@ case '':
  case 'sampriti': case 'sc': case 'samprity':{
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
-const smmenu = `I am sampriti and I love u 😘 dipanwita
-                I love u so.....much. please marry me.`
+buffer = await getBuffer('./Miku-MD/Assets/sm.jpg.jpg')
+                           Miku.sendMessage(from, { image: buffer, caption: '*`I am sampriti and I love u 😘 dipanwita
+                I love u so.....much. please marry me.`*'
+}, {quoted:m})
+                           
 
-                let buttonMessage = {
-                    photo:fs.readFileSync('./Miku-MD/Assets/sm.jpg.jpg'),
-                    caption: love letter,
-                    footer: `sampriti`,
-                    buttons: buttonshelpm,
-                    headerType: 4
-                    
-                }
-            Miku.sendMessage(m.chat, buttonMessage,{ quoted:m })
-                }
 break
 case 'dipu': case 'dipanwita': case 'dipusan': case 'affu':
     if (isBan) return reply (mess.banned)
