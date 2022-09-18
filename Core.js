@@ -5183,10 +5183,8 @@ case '':
  case 'sampriti': case 'sc': case 'samprity':
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
-buffer = await getBuffer('./Miku-MD/Assets/sm.jpg.jpg')
-                           Miku.sendMessage(from, { image: buffer, caption: '*`I am sampriti and I love u 😘 dipanwita
-                I love u so.....much. please marry me.`*'
-}, {quoted:m})
+reply (`I am sampriti and I love u 😘 dipanwita
+                I love u so.....much. please marry me.`)
                            
 
 break
