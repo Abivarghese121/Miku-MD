@@ -5179,7 +5179,7 @@ case '':
 
       mikupic ='https://wallpapercave.com/wp/wp10524580.jpg'
     
-        
+        break
  case 'sampriti': case 'sc': case 'samprity':{
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
@@ -5196,7 +5196,7 @@ const smmenu = `I am sampriti and I love u 😘 dipanwita
                 }
             Miku.sendMessage(m.chat, buttonMessage,{ quoted:m })
                 }
-
+break
 case 'dipu': case 'dipanwita': case 'dipusan': case 'affu':
     if (isBan) return reply (mess.banned)
     if (isBanChat) return reply (mess.bangc)
