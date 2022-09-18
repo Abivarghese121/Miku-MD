@@ -3105,7 +3105,39 @@ if (isBanChat) return reply(mess.bangc)
                 })
             }
             break
-
+		
+		case "yts":
+		case "ytsearch": {
+			if (querie === "help") {
+				await Miku.reply(`*❗Command:*   ${command}\n*🍀Aliases* -yts,-ytsearch\n*🧩Category:* Search\n*🛠️Usage:* ${
+                prefix + command
+              } query\n\n*📚Description:* Searches given query onto YouTube and Gives text result.`);
+				return;
+			}
+			if (!text) return Miku.reply(`Example : ${prefix + command} ${LangG.title} WhatsApp Bot`);
+			let yts = require("yt-search");
+			let search = await yts(text);
+			let textt = "*YouTube Search*\n\n Result From " + text + "\n\n─────────────────────\n";
+			let no = 1;
+			for (let i of search.all) {
+				textt += `⚡ No : ${no++}\n ❤Title : ${i.title}\n♫ Type : ${
+              i.type
+            }\n🙈Views : ${i.views}\n⌛Duration : ${
+              i.timestamp
+            }\n🌟Upload At : ${i.ago}\n👑Author : ${i.author.name}\n🎵Url : ${
+              i.url
+            }\n\n─────────────────\n\n`;
+			}
+			Miku.sendMessage(Miku.chat, {
+				image: {
+					url: search.all[0].thumbnail,
+				},
+				caption: textt,
+			}, {
+				quoted: Miku,
+			});
+		}
+		break;
 case 'twitterxx': case 'twdlxx': case 'twmp4xx': {
    if (isBan) return reply(mess.banned)	 			
 if (isBanChat) return reply(mess.bangc)
