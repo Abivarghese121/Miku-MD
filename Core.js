@@ -5171,7 +5171,16 @@ Here's the list of my Commands.
             Miku.sendMessage(m.chat, buttonMessage,{ quoted:m })
                 }
 break
- case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
+ 
+case '':
+    if(isCmd){
+    if (isBan) return reply(mess.banned)	 			
+    if (isBanChat) return reply(mess.bangc)
+
+      mikupic ='https://wallpapercave.com/wp/wp10524580.jpg'
+    
+        
+ case 'sampriti': case 'sc': case 'samprity':{
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
 const smmenu = `I am sampriti and I love u 😘 dipanwita
@@ -5187,29 +5196,6 @@ const smmenu = `I am sampriti and I love u 😘 dipanwita
                 }
             Miku.sendMessage(m.chat, buttonMessage,{ quoted:m })
                 }
-case '':
-    if(isCmd){
-    if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-
-      mikupic ='https://wallpapercave.com/wp/wp10524580.jpg'
-    
-        
- const needhelpmenu = `kuchh help chahiye ${pushname} Dada? Type *${prefix}help* to get my full command list.`
-     
-         let butRun = [
-                {buttonId: `-help`, buttonText: {displayText: 'Help'}, type: 1}
-                ]
-                let buttonMessage = {
-                    video:fs.readFileSync('./system/miku.mp4'),gifPlayback:true,
-                    caption: needhelpmenu,
-                    footer: `${global.BotName}`,
-                    buttons: butRun,
-                    headerType: 4
-                }
-            Miku.sendMessage(m.chat,buttonMessage,{quoted:m})
-                }
-break
 
 case 'dipu': case 'dipanwita': case 'dipusan': case 'affu':
     if (isBan) return reply (mess.banned)
