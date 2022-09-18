@@ -2287,7 +2287,7 @@ replay(`Successfully Unbanned the user.`)
 replay("Error")
 }
 }
-break /*
+break */
 
 
 case 'listonline': case 'listaktif': case 'here':{
@@ -5171,8 +5171,22 @@ Here's the list of my Commands.
             Miku.sendMessage(m.chat, buttonMessage,{ quoted:m })
                 }
 break
- 
+ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
+    if (isBan) return reply(mess.banned)	 			
+    if (isBanChat) return reply(mess.bangc)
+const smmenu = `I am sampriti and I love u 😘 dipanwita
+                I love u so.....much. please marry me.`
 
+                let buttonMessage = {
+                    photo:fs.readFileSync('./Miku-MD/Assets/sm.jpg.jpg'),
+                    caption: love letter,
+                    footer: `sampriti`,
+                    buttons: buttonshelpm,
+                    headerType: 4
+                    
+                }
+            Miku.sendMessage(m.chat, buttonMessage,{ quoted:m })
+                }
 case '':
     if(isCmd){
     if (isBan) return reply(mess.banned)	 			
