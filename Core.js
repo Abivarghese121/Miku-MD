@@ -5180,7 +5180,7 @@ case '':
       mikupic ='https://wallpapercave.com/wp/wp10524580.jpg'
     
         break
- case 'sampriti': case 'sc': case 'samprity':{
+ case 'sampriti': case 'sc': case 'samprity':
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
 buffer = await getBuffer('./Miku-MD/Assets/sm.jpg.jpg')
