@@ -46,7 +46,11 @@ const xfarrapi = require('xfarr-api')
 const { hentai } = require('./lib/scraper2.js')
 let { msgFilter } = require('./lib/antispam')
 const { mediafireDl } = require('./lib/mediafire.js')
-
+const {
+ 
+  Quotes,
+  Darkjokes
+} = require("dhn-api");
 
 const _ = require('lodash')
 const yargs = require('yargs/yargs')
@@ -4040,7 +4044,6 @@ YesHorny = await getBuffer(NoHorny.result)
 Miku.sendMessage(from, {image:YesHorny},{quoted:m})
 } catch (e) {error("Error")}	
 break
-
 case 'spank':
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
