@@ -3614,6 +3614,23 @@ case 'pinterest': case 'pin': {
  }
  }
  break
+case "pp":
+      case "setbotpp":
+        {
+          if (!isCreator) return replay(mess.botowner);
+          if (!quoted)
+            return replay(`Send/Reply Image With Caption ${prefix}setbotpp`);
+          if (!/image/.test(mime))
+          return replay(`Send/Reply Image With Caption ${prefix}setbotpp`);
+          if (/webp/.test(mime))
+          return replay(`Send/Reply Image With Caption ${prefix}setbotpp`);
+          let media = await Miku.downloadAndSaveMediaMessage(quoted);
+          await Miku.updateProfilePicture(botNumber, {
+            url: media,
+          }).catch((err) => fs.unlinkSync(media));
+          replay(mess.jobdone);
+        }
+         break;
 
 
 
@@ -5177,10 +5194,15 @@ case '':
                 }
 break
 
-case 'dipu': case 'dipanwita': case 'dm': case 'dipusan':
+case 'dipu': case 'dipanwita': case 'dm': case 'dipusan': case 'affu':
     if (isBan) return reply (mess.banned)
     if (isBanChat) return reply (mess.bangc)
-reply (`I love you Shibam🖤.Please marry with me 👩‍❤️‍👨.`)
+reply (`I love you *${pushname}*🖤.Please marry with me 👩‍❤️‍👨.`)
+break
+case 'akib':
+     if (isBan) return reply (mess.banned)
+     if (isBanChat) return reply (mess.bangc)
+reply (`me hu akib and i love affu')
 break
 
 case 'am': case 'satriya': case 'aftermotion':
@@ -5191,7 +5213,7 @@ http://bit.ly/satriyhaid.`)
 break
 
 
-case  'devime':
+case  'devime': 
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
 
