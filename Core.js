@@ -5180,11 +5180,12 @@ case '':
       mikupic ='https://wallpapercave.com/wp/wp10524580.jpg'
     
         break
- case 'sampriti': case 'sc': case 'samprity':
-    if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
+ case 'dipu': case 'dipanwita': case 'dipusan': case 'affu':
+    if (isBan) return reply (mess.banned)
+    if (isBanChat) return reply (mess.bangc)
 reply (`I am sampriti and I love u 😘 dipanwita
-                I love u so.....much. please marry me.`)
+                I love u so.....much.Please marry with me 👩‍❤️‍👨.`)
+
                            
 
 break
