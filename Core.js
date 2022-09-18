@@ -5178,9 +5178,20 @@ case '':
     if (isBanChat) return reply(mess.bangc)
 
       mikupic ='https://wallpapercave.com/wp/wp10524580.jpg'
-    
+    let butRun = [
+                {buttonId: `-help`, buttonText: {displayText: 'Help'}, type: 1}
+                ]
+                let buttonMessage = {
+                    video:fs.readFileSync('./system/miku.mp4'),gifPlayback:true,
+                    caption: needhelpmenu,
+                    footer: `${global.BotName}`,
+                    buttons: butRun,
+                    headerType: 4
+                }
+            Miku.sendMessage(m.chat,buttonMessage,{quoted:m})
+                }
         break
- case 'dipu': case 'dipanwita': case 'dipusan': case 'affu':
+ case 'toya': case 'sonpapri': case 'smc': case 'sampriti': case 'lesbianerbou':
     if (isBan) return reply (mess.banned)
     if (isBanChat) return reply (mess.bangc)
 reply (`I am sampriti and I love u 😘 dipanwita
