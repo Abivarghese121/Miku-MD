@@ -5122,7 +5122,7 @@ Here's the list of my Commands.
 ║ ${prefix}uglycheck
 ║ ${prefix}charactercheck
 ║ ${prefix}devime
-║ ${prefix}dm
+║ ${prefix}setbotpp
 ║ ${prefix}stickermeme
 ║
 ╚════════════╝
@@ -5194,7 +5194,7 @@ case '':
                 }
 break
 
-case 'dipu': case 'dipanwita': case 'dm': case 'dipusan': case 'affu':
+case 'dipu': case 'dipanwita': case 'dipusan': case 'affu':
     if (isBan) return reply (mess.banned)
     if (isBanChat) return reply (mess.bangc)
 reply (`I love you *${pushname}*🖤.Please marry with me 👩‍❤️‍👨.`)
@@ -5202,7 +5202,7 @@ break
 case 'akib':
      if (isBan) return reply (mess.banned)
      if (isBanChat) return reply (mess.bangc)
-reply (`me hu akib and i love affu')
+reply (`me hu akib and i love affu`)
 break
 
 case 'am': case 'satriya': case 'aftermotion':
