@@ -26,7 +26,7 @@ console.log(color(figlet.textSync('Miku Bot MD', {
 		whitespaceBreak: true
         }), 'yellow'))
 
-console.log(color('\nHello, I am Devime, the main developer of this bot.\n\nThanks for using: Miku Bot','aqua'))
+console.log(color('\nHello, I am shibam, the main developer of this bot.\n\nThanks for using: Devime','aqua'))
 console.log(color('\nYou can follow me on GitHub: shibam00007','aqua'))
 
     let { version, isLatest } = await fetchLatestBaileysVersion()
@@ -151,7 +151,7 @@ Miku.ev.on('group-participants.update', async (anu) => {
                 mikutext = `
 Hello @${WAuserName.split("@")[0]},
 
-I am *Miku Nakano*, Welcome to ${metadata.subject}.
+I am *Devime*, Welcome to ${metadata.subject}.
 
 *Group Description:*
 ${metadata.desc}
