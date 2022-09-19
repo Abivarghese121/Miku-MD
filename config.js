@@ -3,19 +3,19 @@ const chalk = require("chalk")
 
 global.available = true
 global.autoReadGc = true
-global.autoReadAll = false
+global.autoReadAll = true
 global.antitags = true
 
 
-global.Owner = ['918515848233']
-global.OwnerNumber = ['918515848233']
-global.ownertag = ['918515848233']
+global.Owner = ['12898016257']
+global.OwnerNumber = ['12898016257']
+global.ownertag = ['12898016257']
 global.BotName = "Devime"
 global.packname = "Devime bot"
 global.author = "By: Shibam"
 global.OwnerName = "Shibam"
 global.BotSourceCode = "https://github.com/shibam00007/Miku-MD"
-global.SupportGroupLink = "https://chat.whatsapp.com/JcBzjRIxM5UHfuJbt0KrWt"
+global.SupportGroupLink = "https://chat.whatsapp.com/"
 global.sessionName = "session"
 
 // Prefix //
