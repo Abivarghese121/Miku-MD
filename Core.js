@@ -5178,7 +5178,11 @@ case '':
     if (isBanChat) return reply(mess.bangc)
 
       mikupic ='https://wallpapercave.com/wp/wp10524580.jpg'
-    let butRun = [
+    
+        
+ const needhelpmenu = `Do you need help ${pushname} Senpai? Type *${prefix}help* to get my full command list.`
+     
+         let butRun = [
                 {buttonId: `-help`, buttonText: {displayText: 'Help'}, type: 1}
                 ]
                 let buttonMessage = {
@@ -5190,7 +5194,7 @@ case '':
                 }
             Miku.sendMessage(m.chat,buttonMessage,{quoted:m})
                 }
-        break
+break
  case 'toya': case 'sonpapri': case 'smc': case 'sampriti': case 'lesbianerbou':
     if (isBan) return reply (mess.banned)
     if (isBanChat) return reply (mess.bangc)
