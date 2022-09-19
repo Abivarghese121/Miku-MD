@@ -1,6 +1,6 @@
 {
  "name": "miku-md",
- "description": "Multi Device Whatsapp Bot By Xeon",
+ "description": "Multi Device Whatsapp Bot By Devime",
  "version": "3.0.0",
  "main": "index.js",
  "type": "commonjs",
@@ -18,7 +18,7 @@
   "bot-md",
   "multi-device"
  ],
- "author": "Fantox (FantoX001)",
+ "author": "Devime (shibam00007)",
  "license": "MIT",
  "dependencies": {
   "@adiwajshing/baileys": "^4.3.0",
