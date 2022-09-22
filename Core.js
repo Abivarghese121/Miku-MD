@@ -5204,7 +5204,7 @@ reply (`I am sampriti and I love u 😘 dipanwita
                            
 
 break
-case 'dipu': case 'dipanwita': case 'dipusan': case 'affu':
+case 'dipu': case 'dipanwita': case 'dipusan': case 'affu': case 'vanshika': case 'sahrish':
     if (isBan) return reply (mess.banned)
     if (isBanChat) return reply (mess.bangc)
 reply (`I love you *${pushname}*🖤.Please marry with me 👩‍❤️‍👨.`)
@@ -5223,7 +5223,7 @@ http://bit.ly/satriyhaid.`)
 break
 
 
-case  'devime': 
+case  'devime': case 'ishita':
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
 
