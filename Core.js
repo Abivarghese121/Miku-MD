@@ -5214,6 +5214,11 @@ case 'akib':
      if (isBanChat) return reply (mess.bangc)
 reply (`me hu akib and i love affu`)
 break
+case 'priyanshu': case 'priyu': case 'saikat': case 'shibam': case 'soumadip':
+     if (isBan) return reply (mess.banned)
+     if (isBanChat) return reply (mess.bangc)
+reply (`we are fucker boys and our target is boobs`)
+break
 
 case 'am': case 'satriya': case 'aftermotion':
     if (isBan) return reply (mess.banned)
